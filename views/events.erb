@@ -1,0 +1,7 @@
+<h1>All Events</h1>
+
+<%= @events[0][":title"] %>
+
+<% for event in @events %>
+    <p style="text-decoration: underline;" class="link"><a href="#""><%= event[:title] %></a></p>
+<% end %>
