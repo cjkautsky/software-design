@@ -3,5 +3,5 @@
 <%= @events[0][":title"] %>
 
 <% for event in @events %>
-    <p style="text-decoration: underline;" class="link"><a href="#""><%= event[:title] %></a></p>
+    <p class="link"><a href="/events/<%= event[:id] %>""><%= event[:title] %></a></p>
 <% end %>
